@@ -1,8 +1,16 @@
+const Dayelement=document.querySelector(".days");
+const Hourelement=document.querySelector(".hours");
+const Minuteelement=document.querySelector(".Minutes");
+const Secondelement=document.querySelector(".seconds");
+
+
 const second=1000
 //1000 millisec
 const minute=60*second;
 const hour=60*minute;
 const day=24*hour;
+
+
 const timmerFunction=()=>{
     setInterval(() => {
     const timer =new Date("05/18/2023").getTime();
