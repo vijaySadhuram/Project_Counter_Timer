@@ -1,7 +1,7 @@
 const Dayelement=document.querySelector(".days");
 const Hourelement=document.querySelector(".hours");
 const Minuteelement=document.querySelector(".Minutes");
-const Secondelement=document.querySelector(".seconds");
+const Secondelement=document.querySelector(".Seconds");
 
 
 const second=1000
@@ -21,6 +21,10 @@ const timmerFunction=()=>{
     const leftminute=Math.floor(differenceTime%hour/minute);
     const leftsecond=Math.floor(differenceTime%minute/second);
     console.log(leftDay,lefthour,leftminute,leftsecond)
+    Dayelement.innerHTML=leftDay;
+    Hourelement.innerHTML=lefthour;
+    Minuteelement.innerHTML=leftminute;
+    Secondelement.innerHTML=leftsecond;
         
     }, 1000);
     
